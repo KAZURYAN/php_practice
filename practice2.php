@@ -9,11 +9,11 @@
   }
   
   function f($box){
-    $sum = 0;
+    $sum = 1;
     $count_box = count($box);
     
     for($i= 0; $i < $count_box; $i++){
-      $sum += $box[$i];
+      $sum = $sum * $box[$i];
     }
     return $sum;
   }  
